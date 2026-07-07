@@ -1,0 +1,1226 @@
+/* ======================================
+        GITAM COURSEHUB
+====================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#f5f7fb;
+
+    color:#222;
+
+    overflow-x:hidden;
+
+}
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+img{
+
+    max-width:100%;
+
+    display:block;
+
+}
+
+h1,h2,h3{
+
+    font-weight:600;
+
+}
+
+/* ===========================
+SCROLLBAR
+=========================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#ececec;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#4CAF50;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#2E7D32;
+
+}
+
+/* ===========================
+SIDEBAR
+=========================== */
+
+.sidebar{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:250px;
+
+    height:100vh;
+
+    background:linear-gradient(180deg,#e9f5dc,#d9eab9);
+
+    padding:25px;
+
+    overflow:auto;
+
+    box-shadow:5px 0 15px rgba(0,0,0,.08);
+
+    z-index:999;
+
+}
+
+.sidebar img{
+
+    width:120px;
+
+    margin:auto;
+
+}
+
+.sidebar h2{
+
+    margin-top:15px;
+
+    margin-bottom:35px;
+
+    color:#2E7D32;
+
+    text-align:center;
+
+}
+
+.sidebar a{
+
+    display:block;
+
+    padding:14px 16px;
+
+    margin-bottom:12px;
+
+    border-radius:10px;
+
+    font-size:16px;
+
+    transition:.3s;
+
+    color:#333;
+
+}
+
+.sidebar a i{
+
+    width:28px;
+
+}
+
+.sidebar a:hover{
+
+    background:#4CAF50;
+
+    color:white;
+
+    transform:translateX(6px);
+
+}
+
+/* ===========================
+CONTENT
+=========================== */
+
+.content{
+
+    margin-left:250px;
+
+    padding:30px;
+
+    min-height:100vh;
+
+}
+
+/* ===========================
+NAVBAR
+=========================== */
+
+.navbar{
+
+    background:white;
+
+    padding:18px 25px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+.search{
+
+    display:flex;
+
+    width:60%;
+
+}
+
+.search input{
+
+    width:100%;
+
+    padding:13px;
+
+    border:1px solid #ddd;
+
+    border-right:none;
+
+    border-radius:10px 0 0 10px;
+
+    font-size:15px;
+
+}
+
+.search button{
+
+    width:60px;
+
+    border:none;
+
+    background:#4CAF50;
+
+    color:white;
+
+    border-radius:0 10px 10px 0;
+
+    cursor:pointer;
+
+}
+
+.search button:hover{
+
+    background:#388E3C;
+
+}
+
+/* ===========================
+BANNER
+=========================== */
+
+.banner{
+
+    margin-top:25px;
+
+}
+
+.banner img{
+
+    width:100%;
+
+    height:340px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+
+}
+
+/* ======================================
+DASHBOARD TITLE
+====================================== */
+
+.dashboard-title{
+
+    text-align:center;
+
+    font-size:42px;
+
+    color:#2E7D32;
+
+    margin-top:35px;
+
+    margin-bottom:10px;
+
+}
+
+.dashboard-title+p{
+
+    color:#666;
+
+    margin-bottom:30px;
+
+}
+
+
+/* ======================================
+STATISTICS CARDS
+====================================== */
+
+.stats{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+    margin-top:35px;
+
+}
+
+.stat-card{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+    border-top:5px solid #4CAF50;
+
+}
+
+.stat-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 15px 30px rgba(0,0,0,.15);
+
+}
+
+.stat-card h2{
+
+    color:#4CAF50;
+
+    font-size:42px;
+
+    margin-bottom:10px;
+
+}
+
+.stat-card p{
+
+    font-size:17px;
+
+    color:#555;
+
+}
+
+
+/* ======================================
+COMMON CARDS
+====================================== */
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+    margin-top:30px;
+
+}
+
+.card{
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 15px 30px rgba(0,0,0,.15);
+
+}
+
+.card h3{
+
+    color:#2E7D32;
+
+    margin-bottom:15px;
+
+}
+
+.card p{
+
+    line-height:1.7;
+
+    color:#666;
+
+}
+
+
+/* ======================================
+COURSE CARDS
+====================================== */
+
+.course-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+    margin-top:35px;
+
+}
+
+.course-card{
+
+    background:white;
+
+    padding:28px;
+
+    border-radius:18px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+    border-left:6px solid #4CAF50;
+
+}
+
+.course-card:hover{
+
+    transform:scale(1.03);
+
+    box-shadow:0 18px 35px rgba(0,0,0,.18);
+
+}
+
+.course-card h3{
+
+    color:#2E7D32;
+
+    margin-bottom:15px;
+
+}
+
+.course-card p{
+
+    margin:10px 0;
+
+    color:#555;
+
+}
+
+
+/* ======================================
+FACULTY CARDS
+====================================== */
+
+.faculty-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+    margin-top:35px;
+
+}
+
+.faculty-card{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:28px;
+
+    text-align:center;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.faculty-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.faculty-card img{
+
+    width:110px;
+
+    height:110px;
+
+    border-radius:50%;
+
+    border:5px solid #4CAF50;
+
+    margin:auto;
+
+    margin-bottom:15px;
+
+}
+
+.faculty-card h3{
+
+    color:#2E7D32;
+
+    margin-bottom:10px;
+
+}
+
+.faculty-card p{
+
+    margin:8px 0;
+
+    color:#666;
+
+}
+
+
+/* ======================================
+BUTTON
+====================================== */
+
+.btn,
+
+.submit-button{
+
+    background:#4CAF50;
+
+    color:white;
+
+    padding:12px 28px;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    font-weight:600;
+
+}
+
+.btn:hover,
+
+.submit-button:hover{
+
+    background:#2E7D32;
+
+    transform:scale(1.05);
+
+}
+
+/* ======================================
+REVIEW CARDS
+====================================== */
+
+.review-container{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:25px;
+
+    margin-top:35px;
+
+}
+
+.review-card{
+
+    background:white;
+
+    padding:25px;
+
+    border-left:6px solid #4CAF50;
+
+    border-radius:15px;
+
+    box-shadow:0 8px 18px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.review-card:hover{
+
+    transform:translateX(8px);
+
+    box-shadow:0 12px 28px rgba(0,0,0,.15);
+
+}
+
+.review-card h3{
+
+    color:#2E7D32;
+
+    margin-bottom:10px;
+
+}
+
+.review-card p{
+
+    line-height:1.8;
+
+    color:#555;
+
+}
+
+.rating{
+
+    color:#FFC107;
+
+    font-size:22px;
+
+    margin:10px 0;
+
+}
+
+
+/* ======================================
+FORMS
+====================================== */
+
+.container{
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:18px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    margin-top:30px;
+
+}
+
+.form-group{
+
+    margin-bottom:22px;
+
+}
+
+.form-group label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    font-weight:600;
+
+    color:#333;
+
+}
+
+.form-group input,
+
+.form-group textarea,
+
+.form-group select{
+
+    width:100%;
+
+    padding:13px;
+
+    border:1px solid #d9d9d9;
+
+    border-radius:10px;
+
+    font-size:15px;
+
+    transition:.3s;
+
+}
+
+.form-group input:focus,
+
+.form-group textarea:focus,
+
+.form-group select:focus{
+
+    border-color:#4CAF50;
+
+    outline:none;
+
+    box-shadow:0 0 8px rgba(76,175,80,.25);
+
+}
+
+.form-group-row{
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+.form-group-row .form-group{
+
+    flex:1;
+
+}
+
+
+/* ======================================
+STAR RATING
+====================================== */
+
+.stars{
+
+    display:flex;
+
+    gap:10px;
+
+    font-size:30px;
+
+}
+
+.stars input{
+
+    display:none;
+
+}
+
+.stars label{
+
+    cursor:pointer;
+
+    color:#cfcfcf;
+
+    transition:.2s;
+
+}
+
+.stars label:hover{
+
+    color:#FFC107;
+
+    transform:scale(1.2);
+
+}
+
+
+/* ======================================
+PLANNER
+====================================== */
+
+.planner-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:30px;
+
+    margin-top:35px;
+
+}
+
+.planner-card{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    box-shadow:0 10px 22px rgba(0,0,0,.08);
+
+    border-left:6px solid #4CAF50;
+
+}
+
+.planner-card h3{
+
+    color:#2E7D32;
+
+    margin-bottom:18px;
+
+}
+
+.planner-card li{
+
+    margin:12px 0;
+
+}
+
+
+/* ======================================
+RECOMMENDATIONS
+====================================== */
+
+.recommend-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+    margin-top:35px;
+
+}
+
+.recommend-card{
+
+    background:white;
+
+    padding:28px;
+
+    border-radius:18px;
+
+    text-align:center;
+
+    box-shadow:0 10px 22px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.recommend-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.recommend-card h3{
+
+    color:#1976D2;
+
+    margin-bottom:15px;
+
+}
+
+.recommend-card p{
+
+    color:#666;
+
+    line-height:1.8;
+
+}
+
+
+/* ======================================
+PROFILE
+====================================== */
+
+.profile{
+
+    display:flex;
+
+    gap:40px;
+
+    align-items:flex-start;
+
+    margin-top:35px;
+
+}
+
+.profile img{
+
+    width:220px;
+
+    height:220px;
+
+    border-radius:50%;
+
+    border:6px solid #4CAF50;
+
+    object-fit:cover;
+
+}
+
+.profile-details{
+
+    flex:1;
+
+}
+
+.profile-details h2{
+
+    color:#2E7D32;
+
+    margin-bottom:20px;
+
+}
+
+/* ======================================
+TABLES
+====================================== */
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    margin-top:30px;
+
+    background:white;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+th{
+
+    background:#4CAF50;
+
+    color:white;
+
+    padding:16px;
+
+    font-size:16px;
+
+}
+
+td{
+
+    padding:15px;
+
+    border-bottom:1px solid #ececec;
+
+    text-align:center;
+
+}
+
+tr:nth-child(even){
+
+    background:#f8fbf6;
+
+}
+
+tr:hover{
+
+    background:#eef8ea;
+
+}
+
+/* ======================================
+WELCOME
+====================================== */
+
+.welcome{
+
+    margin-top:30px;
+
+    text-align:center;
+
+}
+
+.welcome h1{
+
+    font-size:42px;
+
+    color:#2E7D32;
+
+}
+
+.welcome p{
+
+    margin-top:15px;
+
+    color:#666;
+
+    font-size:18px;
+
+}
+
+/* ======================================
+FOOTER
+====================================== */
+
+.footer{
+
+    margin-top:70px;
+
+    background:#1f2937;
+
+    color:white;
+
+    text-align:center;
+
+    padding:35px;
+
+    border-radius:15px 15px 0 0;
+
+}
+
+.footer h2{
+
+    margin-bottom:15px;
+
+    color:#8BC34A;
+
+}
+
+.footer p{
+
+    color:#ddd;
+
+    line-height:1.8;
+
+}
+
+/* ======================================
+SMALL ANIMATIONS
+====================================== */
+
+.card,
+.course-card,
+.faculty-card,
+.review-card,
+.recommend-card,
+.planner-card,
+.stat-card{
+
+    animation:fadeUp .6s ease;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ======================================
+ICONS
+====================================== */
+
+.fa-house,
+.fa-book,
+.fa-user-group,
+.fa-star,
+.fa-pen,
+.fa-calendar-days,
+.fa-robot,
+.fa-user,
+.fa-right-from-bracket{
+
+    margin-right:10px;
+
+}
+
+/* ======================================
+RESPONSIVE
+====================================== */
+
+@media(max-width:1200px){
+
+.stats,
+.cards,
+.course-container,
+.faculty-container,
+.recommend-container{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.sidebar{
+
+position:relative;
+
+width:100%;
+
+height:auto;
+
+}
+
+.content{
+
+margin-left:0;
+
+padding:20px;
+
+}
+
+.navbar{
+
+flex-direction:column;
+
+gap:15px;
+
+}
+
+.search{
+
+width:100%;
+
+}
+
+.stats,
+.cards,
+.course-container,
+.faculty-container,
+.recommend-container,
+.planner-container{
+
+grid-template-columns:1fr;
+
+}
+
+.profile{
+
+flex-direction:column;
+
+align-items:center;
+
+text-align:center;
+
+}
+
+.profile img{
+
+width:170px;
+
+height:170px;
+
+}
+
+.banner img{
+
+height:220px;
+
+}
+
+.dashboard-title{
+
+font-size:30px;
+
+}
+
+.welcome h1{
+
+font-size:32px;
+
+}
+
+}
+
+/* ======================================
+UTILITY
+====================================== */
+
+.text-center{
+
+text-align:center;
+
+}
+
+.mt-20{
+
+margin-top:20px;
+
+}
+
+.mt-40{
+
+margin-top:40px;
+
+}
+
+.mb-20{
+
+margin-bottom:20px;
+
+}
+
+.shadow{
+
+box-shadow:0 10px 20px rgba(0,0,0,.08);
+
+}
+
+.rounded{
+
+border-radius:15px;
+
+}
