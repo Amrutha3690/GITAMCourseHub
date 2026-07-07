@@ -1,54 +1,54 @@
-# GITAM CourseHub
+## GITAM CourseHub
 
 GITAM CourseHub is a web-based academic portal developed specifically for GITAM University students to explore courses, review faculty members, and plan their academic journey. The platform helps students make informed decisions by providing course information, faculty ratings, student reviews, semester planning, and personalized course recommendations.
 
 ---
 
-## Key Features
+### Key Features
 
-### 1. Course Directory
+#### 1. Course Directory
 Students can browse courses offered under the Computer Science & Engineering (Data Science) program, including course credits, semester details, and faculty information.
 
-### 2. Faculty Profiles
+#### 2. Faculty Profiles
 View faculty members along with their subjects, qualifications, teaching experience, ratings, and contact information.
 
-### 3. Student Reviews
+#### 3. Student Reviews
 Students can read reviews submitted by other students to understand course difficulty, teaching quality, and learning experience.
 
-### 4. Submit Reviews
+#### 4. Submit Reviews
 Students can submit course reviews by selecting the course, faculty, rating, workload, and providing detailed feedback.
 
-### 5. Semester Planner
+#### 5. Semester Planner
 A dedicated planner helps students organize their semester subjects, monitor credits, and keep track of important academic events.
 
-### 6. Personalized Course Recommendations
+#### 6. Personalized Course Recommendations
 Provides course recommendations based on completed subjects, interests, and career goals such as Software Development, Artificial Intelligence, Data Science, and Cloud Computing.
 
-### 7. Student Profile
+#### 7. Student Profile
 Students can view their academic profile, technical skills, certifications, achievements, internships, and recent activities.
 
 ---
 
-# Technologies Used
+## Technologies Used
 
-## Frontend
+### Frontend
 
 - HTML5
 - CSS3
 - JavaScript
 
-## Backend (Architecture)
+### Backend (Architecture)
 
 - Java
 - JSP
 - Servlets
 - JDBC
 
-## Database
+### Database
 
 - MySQL
 
-## Development Tools
+### Development Tools
 
 - Apache Tomcat 10
 - Visual Studio Code
@@ -57,79 +57,20 @@ Students can view their academic profile, technical skills, certifications, achi
 
 ---
 
-# Project Modules
-
-- Home
-- Student Registration
-- Student Login
-- Dashboard
-- Courses
-- Faculty
-- Student Reviews
-- Submit Review
-- Semester Planner
-- AI Course Recommendations
-- Student Profile
-
----
-
-# Project Structure
-
-```
-GITAMCourseHub
-
-│
-├── css
-│     └── style.css
-│
-├── images
-│     ├── logo.png
-│     ├── faculty.png
-│     ├── login.jpg
-│     └── Campus-visakhapatnam.jpg
-│
-├── js
-│     └── script.js
-│
-├── pages
-│     ├── register.html
-│     ├── login.html
-│     ├── dashboard.html
-│     ├── courses.html
-│     ├── faculty.html
-│     ├── reviews.html
-│     ├── submit-review.html
-│     ├── planner.html
-│     ├── recommendations.html
-│     └── profile.html
-│
-├── index.html
-└── README.md
-```
-
----
-
-# How It Works
+## How It Works
 
 1. Students register using the registration page.
-
 2. Users log in to access the student dashboard.
-
 3. Browse available courses and faculty profiles.
-
 4. Read reviews submitted by other students.
-
 5. Submit course and faculty reviews.
-
 6. Plan the semester using the Semester Planner.
-
 7. View AI-based course recommendations.
-
 8. Manage academic profile and achievements.
 
 ---
 
-# Future Enhancements
+## Future Enhancements
 
 - AI-powered recommendation engine using Machine Learning
 - Admin Dashboard
@@ -143,59 +84,49 @@ GITAMCourseHub
 
 ---
 
-# Screenshots
+## Screenshots
 
-## Home
+### Home
 
 ![](screenshots/home.png)
 
-## Dashboard
+### Dashboard
 
 ![](screenshots/dashboard.png)
 
-## Courses
+### Courses
 
 ![](screenshots/courses.png)
 
-## Faculty
+### Faculty
 
 ![](screenshots/faculty.png)
 
-## Reviews
-
-![](screenshots/reviews.png)
+### Reviews
 
 ![](screenshots/reviews2.png)
 
 
-## Submit Review
+### Submit Review
 
 ![](screenshots/submit-review.png)
 
-## Semester Planner
+### Semester Planner
 
 ![](screenshots/planner.png)
 
-## Recommendations
+### Recommendations
 
 ![](screenshots/recommendations.png)
 
-## Profile
+### Profile
 
 ![](screenshots/profile.png)
 
 ---
 
-# Developed By
+## Developed By
 
 **Amrutha Ratna Valli**
-
 B.Tech – Computer Science & Engineering (Data Science)
-
 GITAM (Deemed to be University)
-
----
-
-# License
-
-This project is developed for academic and educational purposes.
